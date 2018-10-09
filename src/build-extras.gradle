@@ -1,3 +1,13 @@
+dependencies {
+    // Multidex lib for Android v4
+    compile 'com.android.support:multidex:1.0.3'
+}
 android {
-
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
 }

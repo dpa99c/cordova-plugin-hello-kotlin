@@ -21,5 +21,16 @@
         "cordova",
         "android",
         "kotlin"
-    ]
+    ],
+    "dependencies": {
+        "xml2js": "^0.4.19"
+    },
+    "engines": {
+        "cordovaDependencies": {
+            "1.0.0": {
+                "cordova-android": ">=7.0.0",
+                "cordova": ">=7.1.0"
+            }
+        }
+    }
 }
