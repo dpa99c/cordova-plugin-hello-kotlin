@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-hello-kotlin"
+        version="1.0.0">
+
+  <name>Hello</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <author email="dave@workingedge.co.uk">Dave Alden</author>
+
+  <asset src="www/hellokotlin.js" target="js/hellokotlin.js"/>
+
+  <js-module src="www/hellokotlin.js" name="hellokotlin">
+    <clobbers target="hellokotlin" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="HelloKotlin">
+        <param name="android-package" value="cordova.plugin.HelloKotlin"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/HelloKotlin.java" target-dir="app/src/cordova/plugin"/>
+
+    <source-file src="src/build-extras.gradle" target-dir="."/>
+  </platform>
+</plugin>
