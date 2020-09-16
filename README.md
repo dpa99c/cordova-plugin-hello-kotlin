@@ -1,3 +1,6 @@
+# DEPRECATION NOTICE
+This plugin is deprecated as it's no longer required since [`cordova-android@9`](https://github.com/apache/cordova-android/blob/master/RELEASENOTES.md#900-jun-23-2020) adds built-in support for Kotlin.
+
 cordova-plugin-hello-kotlin
 ===========================
 
